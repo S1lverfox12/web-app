@@ -1,0 +1,185 @@
+
+main {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+
+
+.menu-filter {
+    background-color: var(--color-green);
+    border-radius: var(--border-radius-form);
+    border: 1px solid #000000;
+    float: left;
+    width: 25%;
+    display: grid;
+}
+
+.block-filter {
+    padding: 5% 4%;
+    /*border-bottom: 1px solid #000000;*/
+
+}
+
+.input-search-line {
+    position: relative;
+    width: 100%;
+    border-radius: var(--border-radius-search-line);
+    border: 1px solid var(--color-white);
+    height: 35px;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+.input-search-line .icon {
+    position: absolute;
+    right: 2%;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-search-line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.input-search {
+    position: relative;
+    height: 25px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+
+}
+
+.input-search-line .input-search input {
+    border: 0;
+    position: absolute;
+    outline: 0;
+}
+
+h5 {
+    margin-bottom: 2%;
+}
+
+input[type="checkbox" i] {
+    cursor: pointer;
+}
+.form-check-input:checked {
+    background-color: var(--color-light-dark) !important;
+    border-color: var(--color-light-dark) !important;
+
+}
+
+input[type="checkbox"]:focus, input[type="text"]:focus{
+    box-shadow: none;
+    border-color: var(--color-light-dark);
+}
+
+
+
+.elem-with-checkbox.hidden {
+    display: none;
+}
+
+
+
+
+.btn-use {
+    color: var(--color-white) !important;
+    background-color: var(--color-light-dark) !important;
+    padding-right: 25% !important;
+    padding-left: 25% !important;
+
+
+
+}
+
+.button-container {
+    margin-top: 7%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Список товаров одной категории*/
+
+
+.list-tovars {
+    float: right;
+    width: 70%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+
+.list-tovars .item {
+    width: 100%;
+    background-color: var(--color-tovar-back);
+    border-radius: var(--border-radius-form);
+    padding: 5%;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    height: 210px;
+
+}
+
+
+.img-tovar {
+    grid-column: 1;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    position: relative;
+}
+
+.img-tovar img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    bottom: 0;
+    left: 0;
+}
+
+.tovar-description {
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main a, a:hover {
+    text-decoration: none !important;
+    color: #0a0a0a !important;
+}
+
+.price-button .button-container {
+    width: 170px;
+    margin: 0 15%;
+}
+.price-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20%;
+    align-items: center;
+}
+
+.content-plus-pagingation {
+    display: grid;
+    gap: 20px;
+
+}
+.pagination {
+    margin: auto;
+}

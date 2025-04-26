@@ -1,0 +1,114 @@
+main {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+
+.list-tovars-and-btn-del-all {
+    display: grid;
+
+}
+
+.list-tovars {
+    float: left;
+    width: 70%;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+
+}
+
+
+
+.item {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius-form);
+    padding: 0 2%;
+}
+
+a h5 {
+  margin-bottom: 0 !important;
+}
+
+.button-and-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.button-and-price .price {
+    font-weight: 700;
+}
+
+
+
+.del-btn-container {
+
+    position: relative;
+
+    padding: 2% 2%;
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+
+    /*background-color: var(--color-white);*/
+    cursor: pointer;
+}
+.del-btn-container:hover {
+    background-color: var(--color-green);
+    border-radius: var(--border-radius-form);
+}
+
+
+.btn-delete-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.ctn-btn-del-all {
+
+
+}
+
+#delAllTovars {
+    float: right;
+    width: 20%;
+    color: var(--color-white);
+    background-color: var(--color-light-dark);
+    border-radius: var(--border-radius-buttons);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 5%;
+    height: 50px;
+    padding: 0 10px;
+}
+
+#delAllTovars:hover {
+    background-color: #0a0a0a;
+    color: var(--color-green)
+}
+
+.empty {
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
